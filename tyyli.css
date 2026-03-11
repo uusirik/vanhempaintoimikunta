@@ -1,0 +1,79 @@
+/* Perusasetukset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Ylätunnisteen tyyli */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0 0 0;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Valikon tyyli */
+nav {
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #f39c12; /* Muuttuu oranssiksi kun hiiri viedään päälle */
+}
+
+/* Pääsisällön tyyli */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Yksittäisten "laatikoiden" tyyli */
+section {
+    background-color: white;
+    padding: 25px 35px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 10px;
+}
+
+/* Alatunniste */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
