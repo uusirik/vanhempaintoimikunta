@@ -76,4 +76,44 @@ footer {
     color: #666;
     font-size: 0.9rem;
     margin-top: 40px;
+
+/* --- MOBIILIOPTIMOINTI (Kapeat ruudut) --- */
+/* --- MOBIILIOPTIMOINTI (Kapeat ruudut) --- */
+@media (max-width: 600px) {
+    
+    header {
+        padding: 1.5rem 10px; /* Vähennetään tyhjää tilaa otsikon ympäriltä */
+    }
+
+    /* Pienennetään pääotsikkoa ja pakotetaan pitkät sanat katkeamaan nätisti */
+    header h1 {
+        font-size: 1.4rem;
+        word-wrap: break-word; 
+        hyphens: auto; 
+    }
+
+    /* Muutetaan valikko allekkain olevaksi listaksi */
+    nav {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* Tehdään linkeistä isompia nappeja, joihin on helppo osua sormella */
+    nav a {
+        display: block; /* Varmistaa, että laatikko käyttäytyy oikein allekkain */
+        width: 100%;
+        margin: 0;
+        padding: 15px 0; /* Nollataan sivuttaissuuntainen tyhjä tila, ettei pursua yli */
+        border-bottom: 1px solid #2c3e50;
+        box-sizing: border-box; /* Estää nappia kasvamasta ruutua leveämmäksi */
+    }
+
+    /* Vähennetään tyhjää tilaa laatikoiden reunoilta ja kavennetaan hieman marginaalia */
+    main {
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
 }
